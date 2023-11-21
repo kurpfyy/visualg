@@ -4,12 +4,19 @@ Algoritmo "semnome"
 //1
 Var
 // Seção de Declarações das variáveis 
+conta: real
+gorjeta: real
 valor: real
-acre: inteiro
 
 Inicio
-valor =: escreva("Qual valor da conta?")
-leia(valor)
+escreva("Qual valor da conta?")
+leia(conta)
+gorjeta <- conta / 10
+valor <- conta + gorjeta
+escreva("A Conta com a gorjeta do garçom ficou:", valor)
+
+
+
 
 
 Fimalgoritmo
